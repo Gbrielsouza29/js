@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>formulario soma</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h3>formulario soma</h3>
+
+    <!-- Defini��o de Formul�rio -->
+    <form name="F_Soma" action=" " method="post">
+       <label>nome Digite o primerio valor: <input type="text" name="f_n1" /></label>
+        <p></p>
+        Digite o segundo valor: <input type="text" name="f_n2" />
+        <p></p>
+        <input type="button" name="soma" value="Somar" onclick="somar()" />
+        <input type="reset" name="btn_limpar" value="Limpar" />
+    </form>
+
+    <!-- Defini��o do c�digo JavaScript -->
+    <script language="javascript">
+/* 	Objetivo: Capturar nome e sobrenome do usu�rio, concatenar (juntar) os campos e 
+			  apresentar uma sauda��o personalizada 
+ 	          Elementos de Entrada: m�todo form do objeto document
+	          Elementos de Sa�da: m�todo alert do objeto window 
+*/
+
+/* Defini��o das Vari�veis */
+        var f_n1 
+        var f_n2
+        function somar() {
+
+            /* Entrada de Dados */
+           f_n1 = parseInt(document.F_Soma.f_n1.value);
+           f_n2 = parseInt(document.F_Soma.f_n2.value);
+
+            /* Processamento de Dados */
+           var soma = f_n1+ f_n2;
+
+            /* Sa�da de Dados */
+            window.alert(soma)
+            document.write(soma)
+
+        }
+//-->
+    </script>
+</body>
+
+</html>
